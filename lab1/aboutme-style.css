@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-image: url("images/bg.jpg");
+  background-size: 100% 100%;
+  background-attachment: fixed; }
+  body h1 {
+    color: blue; }
+  body div.info {
+    color: #FFF; }
+    body div.info h2 {
+      color: red; }
+    body div.info p:first-letter, body div.info li:first-letter {
+      font-size: 1.5em; }
+    body div.info span.emphasized {
+      font-size: 20px;
+      font-weight: bolder; }
+    body div.info ol {
+      list-style: none;
+      counter-reset: reverse 4; }
+      body div.info ol a {
+        text-decoration: none; }
+      body div.info ol a:hover {
+        text-decoration: underline; }
+      body div.info ol li.count {
+        text-indent: 30px;
+        counter-increment: reverse -1; }
+        body div.info ol li.count ul {
+          list-style: none; }
+      body div.info ol li.count:before {
+        content: counter(reverse) "."; }
+
+/*# sourceMappingURL=aboutme-style.css.map */

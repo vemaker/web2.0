@@ -1,0 +1,31 @@
+body 
+  margin: 0
+  background-image: url('images/bg.jpg')
+  background-size: 100% 100%
+  background-attachment: fixed
+  h1
+    color: blue
+  div.info
+    color: #FFF
+    h2
+      color: red
+    p:first-letter, li:first-letter
+      font-size: 1.5em
+    span.emphasized
+      font-size: 20px
+      font-weight: bolder
+    ol
+      list-style: none
+      counter-reset: reverse 4
+      a
+        text-decoration: none
+      a:hover
+        text-decoration: underline
+      li.count
+        text-indent: 30px
+        counter-increment: reverse -1
+        ul
+          list-style: none
+      li.count:before
+        content: counter(reverse) '.'
+
