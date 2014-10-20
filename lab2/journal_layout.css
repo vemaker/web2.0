@@ -1,0 +1,40 @@
+body {
+  margin: 0 10%;
+  padding: 0;
+  background-image: url("images/background.gif"); }
+  body div#wrapper {
+    border: 10px #FFF solid;
+    background: #FFF; }
+    body div#wrapper div.title {
+      text-align: right;
+      background: #A8F0F0; }
+      body div#wrapper div.title h2 {
+        font-size: 14px; }
+    body div#wrapper div.inner-wrapper {
+      overflow: hidden; }
+      body div#wrapper div.inner-wrapper div.friends {
+        float: left;
+        width: 16%;
+        overflow: hidden;
+        border: 5px #009097 solid;
+        background: #A8F0F0; }
+        body div#wrapper div.inner-wrapper div.friends ul {
+          float: right; }
+          body div#wrapper div.inner-wrapper div.friends ul a:hover {
+            color: yellow; }
+      body div#wrapper div.inner-wrapper div.content {
+        width: 77%;
+        float: right;
+        overflow: hidden;
+        margin-top: 10px;
+        padding-top: 5px;
+        background: #E8FBFB;
+        border: 4px #C2E9E9 solid; }
+        body div#wrapper div.inner-wrapper div.content span.date {
+          border-bottom: 2px #009097 dashed; }
+        body div#wrapper div.inner-wrapper div.content span.date:hover {
+          color: yellow; }
+    body div#wrapper img {
+      float: right; }
+
+/*# sourceMappingURL=journal_layout.css.map */
