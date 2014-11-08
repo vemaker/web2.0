@@ -34,12 +34,8 @@ class IndexHandler(tornado.web.RequestHandler):
 
 if __name__ == '__main__':
     tornado.options.parse_command_line()
-    app = tornado.web.Application(
-        handlers=[(r'/', IndexHandler)],
-        template_path=os.path.join(os.path.dirname(__file__), "template"),
-        static_path=os.path.join(os.path.dirname(__file__), "static"),
-        debug=True
-    )
+    app = tornado.web.Application(handlers=[(r'/', IndexHandler)], template_path=os.path.join(os.path.dirname(__file__), "template"),
+        static_path=os.path.join(os.path.dirname(__file__), "static"), debug=True)
     http_server = tornado.httpserver.HTTPServer(app)
     http_server.listen(options.port)
     tornado.ioloop.IOLoop.instance().start()
