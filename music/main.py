@@ -28,10 +28,7 @@ class IndexHandler(tornado.web.RequestHandler):
         else:
             filenames = os.listdir(filepath)
         for filename in filenames:
-            files.append(file(filename,
-                os.path.splitext(filename)[1][1:],
-                os.path.getsize(os.path.join(filepath, filename))
-            ))
+            files.append(file(filename, os.path.splitext(filename)[1][1:], os.path.getsize(os.path.join(filepath, filename))))
         files.sort(key=lambda x:(x.filetype, x.name))
         self.render('music.html', files=files)
 

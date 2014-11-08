@@ -20,7 +20,7 @@
         {% for file in files %}
           {% if file.filetype == 'mp3' %}
             <li class="mp3item">
-              <a href="{{ static_url("songs") }}/{{file.name}}") }}">{{ file.name }}</a>
+              <a href="{{ static_url("songs") }}/{{ file.name }}") }}">{{ file.name }}</a>
               <span>{{ file.size }}<span>
             </li>
           {% end %}
