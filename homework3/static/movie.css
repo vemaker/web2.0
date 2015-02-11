@@ -1,0 +1,99 @@
+body {
+	background-image: url("images/background.png");
+	font-family: Verdana, Tahoma;
+	font-size: 8pt;
+}
+h1 {
+	text-align: center;
+	font-family: Tahoma, Verdana;
+	font-size: 24pt;
+}
+div.back {
+    background-image: url("images/bannerbackground.png");
+    background-repeat: repeat-x;
+    height: 50px;
+}
+div#body {
+	width: 800px;
+	border: 4px gray solid;
+	display: block;
+	margin: auto;
+}
+div#left {
+	float: left;
+	width: 550px;
+}
+div#left-top {
+	background-image: url("images/rottenbackground.png");
+	background-repeat: repeat-x;
+	height: 83px;
+	color: white;
+	font-size: 8pt;
+}
+div#left-top span#size {
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+}
+span#vertical {
+	vertical-align: 15px;
+}
+div#left p.border {
+	display: block;
+	font-size: 8pt;
+	font-weight: bolder;
+	background: #E1D697;
+	border: gray 2px solid;
+	padding: 8px;
+	margin-top: 3em;
+}
+div.float-left {
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: -2em;
+    width: 47%;
+	float: left;
+}
+div.float-right {
+	margin-right: 2%;
+	margin-top: -2em;
+	width: 47%;
+	float: right;  
+}
+div#left p img {
+	margin-right: 5px;
+}
+div#left p span.fs {
+	font-style: italic;
+}
+div#left p.critic img {
+	float: left;
+}
+div#right {
+	float: right;
+	width: 250px;
+	font-size: 8pt;
+	font-family: Aria;
+	background: #A2B964;
+}
+div#right dl {
+	margin: 10px;
+}
+div#right dt {
+	font-weight: bold;
+	margin-top: 1em;
+}
+div.last p{
+	clear: both;
+	background: #A2B964;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+div.fixed {
+	position: fixed;
+	right: 150px;
+	bottom: 5px;
+}
+
+

@@ -1,0 +1,39 @@
+/*add some special background  for the comments*/
+pre.out{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #FFFFC8;
+    letter-spacing: -2px;
+    word-spacing: -2px;
+    text-align: left;}
+/*add some css for the link*/
+pre.pr{text-decoration: underline; color: #A4A400;}
+
+/*make some change on css for ul*/
+ul.y{list-style-type:square;}
+ul.yu, ul.in{list-style-type:circle;}
+ul.y{list-style-image:url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif"); list-style-type:square;}
+ul {list-style-image: url("http://http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/pie_icon.gif");}
+
+/*adjust the indent for li hose class is in*/
+li.in{text-indent:10px;}
+
+/*change the css for the  title base on your page*/
+h1,h2,h3,h4,h5{text-decoration: underline; color: #A4A400; background: #F0F0F0; word-spacing: 0.2em}
+h1{text-align: center; font-size: 22pt; font-family: Century Gothic; font-weight: normal;}
+h2 {font-family: Futura;}
+h3 {font-family: Verdana;}
+h4 {font-family: Arial;}
+h5 {font-family: Tahoma;}
+h2,h3,h4,h5{text-align: left; font-size: 18pt; font-weight: lighter;}
+/*make some css for the background*/
+body{background: white; font-size:11pt; color: #404040; background-image: url("silverware.jpg"); background-repeat: repeat;background-attachment: fixed;}
+/*add the border for the image*/
+img.jia {border: 1px solid yellow;}
+
+/*delete the border of the images*/
+img {border-style: none;}
+
+
+

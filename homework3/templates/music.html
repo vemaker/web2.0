@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{{title}}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link href="http://www.cs.washington.edu/education/courses/cse190m/09sp/labs/3-music/viewer.css" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="header">
+
+			<h1>{{header1}}</h1>
+			<h2>{{header2}}</h2>
+		</div>
+		
+		
+		<div id="listarea">
+			<ul id="musiclist">
+				{% for songs in songsMlink %}
+				<li class="mp3item">
+					<a href="{{ static_url(songs.name)}}">{{songs.name}}</a>({{songs.size}})
+				</li>
+				{% end %}
+				{% if isset == 'None' %}
+				{% for songsp in songsPlink %}
+				<li class="playlistitem">
+					<a href="?playlist={{ songsp }}">{{songsp}}</a>
+				</li>
+				{% end %}
+				{% else %}
+					<a href="/">back to the main page</a>
+				{% end %}
+			</ul>
+		</div>
+	</body>
+</html>

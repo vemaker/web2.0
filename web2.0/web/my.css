@@ -1,0 +1,29 @@
+body { background-color: gray;}
+h1 { font-size: 150%;}
+h2 { font-size: 100%;}
+h3 { font-size: 100%;}
+h4 { font-size: 100%;}
+h5 { font-size: 100%;}
+span, dt { color: yellow;}
+a { text-decoration: none;}
+a:hover { text-decoration: underline;}
+p::first-letter { font-size: 150%;}
+ol.reverse {
+       list-style: none;
+       counter-reset: reverse 4;
+  }
+   ol.reverse > li:before {
+       content: counter(reverse) '.';
+       display: block;
+       position: absolute;
+       left: -30px;
+       text-align: right;
+       width: 20px;
+   }
+  ol.reverse > li {
+  counter-increment: reverse -1;
+  position: relative;
+}
+
+
+ 	

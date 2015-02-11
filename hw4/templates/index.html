@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<!-- CSE 190 M Homework 4 (NerdLuv) -->
+	<head>
+		<title>NerdLuv</title>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<link href="heart.gif" type="image/gif" rel="shortcut icon" />
+		<link href="{{static_url('nerdluv.css')}}" type="text/css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div id="main">
+			<div id="bannerarea">
+				<img src="{{static_url('images/nerdluv.png')}}" alt="banner logo" /> <br />
+				where meek geeks meet
+			</div>
+			<form action="/register" method="post">
+	        <div id="mainBlock">
+			<div id="newUser">New User Signup:</div>
+           
+			<div id="name">
+				<strong>Name:</strong>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" maxlength="16" name="name">
+			</div>
+
+			<div id="gender">
+				<strong>Gender:</strong>
+				<input type="radio" name="gender" value="M" checked="ckecked">Male
+				<input type="radio" name="gender" value="F">Female
+			</div>
+
+			<div id="age">
+				<strong>Age:</strong>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="age">
+			</div>
+
+			<div id="personality">
+				<strong>Personality type:</strong>
+				<input type="text" name="personality">
+				(<a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">Don't know your type?</a>)
+			</div>
+
+			<div id="os">
+				<strong>Favorite OS:</strong>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select size="1" name="favoriteOS">
+					<option selected="selected">Windows</option>
+					<option>Mac OS X</option>
+					<option>Linux</option>
+					<option>other</option>
+				</select>
+			</div>
+
+
+			<div id="seeking">
+				<strong>Seeking:</strong>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="seeking" value="M">Male
+				<input type="checkbox" name="seeking" checked="checked" value="F">Female
+			</div>
+
+			<div id="betweenAge">
+				<strong>Between ages:</strong>
+				&nbsp&nbsp&nbsp&nbsp<input type="text" name="ageMin" style="width:70px"> and <input type="text" name="ageMax" style="width:70px">
+			</div>
+ 
+			<div id="signup">
+				<input type="file" name="image" value="submit image">submit your image here
+				<input type="submit" name="SignUp" value="Sign Up">
+			</div>
+		</div>
+		<div id="signInblock">
+			<div id="oldUser">Sign in:</div>
+			<div id="nameForSignin">
+				<strong>Name:</strong>
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" name="nameForSignin">
+			<div id="signin">
+				<input type="file" name="image" value="submit imgae">submit your image here
+				<input type="submit" name="submitForsignin" value="Sign in">
+			</div>
+			</div>
+		</div>
+	</div>
+		</form>
+		<p>
+			Results and page (C) Copyright 2009 NerdLuv Inc.
+		</p>
+
+		<div id="w3c">
+			<a href="http://validator.w3.org/check/referer">
+				<img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" /></a>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				<img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS" /></a>
+		</div>
+	</body>
+</html>
+
+	

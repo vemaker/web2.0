@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--Copyright reversed by SS.SYSU-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Buy Your Way to a Better Education!</title>
+    <link href="{{static_url('buyagrade.css')}}" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Buy Your Way to a Better Education!</h1>
+
+    <p>
+        The rough economy, along with recent changes in University of Washington policy, now allow us to offer grades for money. That's right! All you need to get a 4.0 in this course is cold, hard, cash.
+    </p>
+    <form action="/login" method="post">
+        Name:<br>
+        <input type="text" name="name"><br>
+        Section:<br>
+        <select name="selection" size="1">
+        	<option selected="selected">(select a selections)</option>
+            <option>MA</option>
+            <option>MH</option>
+        </select><br>
+        Credit Card:<br>
+            <input type="text" name="creditCardNumber"><br>
+            <input type="radio" name="creditCard" value="visa" checked="checked" /> Visa
+            <input type="radio" name="creditCard" value="mastercard" /> MasterCard<br>
+            <input type="submit" value="I am a graint sucker">
+    </form>
+
+    <hr />
+
+    <h2>Give us your money</h2>
+</body>
+
+</html>

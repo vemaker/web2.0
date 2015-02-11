@@ -1,0 +1,9 @@
+#test {
+	width: 100px;
+	height: 100px;
+	background: url("background.jpg");
+	position: absolute;
+	left: 300px;
+	bottom: 200px;
+	background-position: 100px 100px;
+}
